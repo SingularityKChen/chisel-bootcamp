@@ -108,7 +108,8 @@ The simplest way seens to be to Download Coursier from [here](https://git.io/vgv
 Go to download folder, where "coursier" (file) is
 
 ```
-java -noverify -jar coursier launch -r jitpack -i user -I user:sh.almond:scala-kernel-api_2.12.8:0.2.1 sh.almond:scala-kernel_2.12.8:0.2.1 --sources --default=true -- --install
+java -noverify -jar .\coursier bootstrap -r jitpack -i user -I user:sh.almond:scala-kernel-api_2.12.8:0.9.1 sh.almond:scala-kernel_2.12.8:0.9.1 --sources --default=true -o almond
+./almond --install
 ```
 
 #### Install the chisel-bootcamp repo.
